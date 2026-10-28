@@ -84,24 +84,13 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 .fact span{display:block;margin-top:14px;font-size:14px;color:var(--mute);line-height:1.8}
 .hero__badge{display:inline-flex;align-items:baseline;gap:6px;margin:10px 0 4px;padding:6px 12px;border:1px solid var(--lime);color:var(--lime);font-weight:700;font-size:13px;letter-spacing:.08em}
 .hero__badge b{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:20px;line-height:1}
-.cert{position:relative;overflow:hidden;padding:140px 0;background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.cert__giant{position:absolute;right:-2vw;top:50%;transform:translateY(-50%);font-family:"Dela Gothic One",sans-serif;font-size:clamp(220px,34vw,520px);line-height:.8;color:transparent;-webkit-text-stroke:2px rgba(195,245,60,.18);pointer-events:none;white-space:nowrap}
-.cert .wrap{position:relative;display:grid;grid-template-columns:1.25fr 1fr;gap:72px;align-items:center}
-.cert__eyebrow{font-weight:700;font-size:13px;letter-spacing:.3em;color:var(--lime)}
-.cert h2{margin:18px 0 28px;line-height:1}
-.cert h2 small{display:block;font-size:clamp(20px,2.2vw,30px);font-weight:700;color:var(--paper);letter-spacing:.06em;margin-bottom:12px}
-.cert__grade{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:clamp(96px,12vw,180px);color:var(--paper);letter-spacing:-.02em}
-.cert__grade em{font-style:normal;color:var(--lime)}
-.cert p{color:var(--soft);line-height:1.95;font-size:16px;margin:0 0 16px;max-width:36em}
-.cert__lead{font-size:18px !important;color:var(--paper) !important}
-.cert__lead strong{color:var(--lime)}
-.cert__pts{list-style:none;padding:0;margin:28px 0 36px;display:grid;gap:12px}
-.cert__pts li{display:flex;gap:16px;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--line);font-size:15px}
-.cert__pts b{font-family:"Oswald",sans-serif;color:var(--lime);letter-spacing:.1em}
-.cert__img{margin:0;position:relative}
-.cert__img img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 45%;display:block;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%)}
-.cert__img figcaption{position:absolute;left:0;bottom:24px;background:var(--lime);color:var(--ink);padding:8px 14px;font-size:13px;font-weight:700}
-.cert__img figcaption b{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:16px;margin-right:2px}
+.cert{padding:72px 0;background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cert .wrap{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.cert__mark{margin:0;padding:18px 24px;border:1px solid var(--lime);color:var(--paper);font-size:14px;line-height:1.7;font-weight:700}
+.cert__mark .osw{display:block;color:var(--lime);font-size:13px;letter-spacing:.3em}
+.cert__mark b{color:var(--lime);font-size:18px}
+.cert h2{margin:0 0 12px;font-size:clamp(18px,1.8vw,24px);font-weight:700;color:var(--paper)}
+.cert p{margin:0;color:var(--soft);font-size:15px;line-height:1.9;max-width:44em}
 .fact i{position:absolute;top:-12px;left:0;background:var(--ink);padding-right:10px;font-style:normal;font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:.3em;color:var(--lime)}
 
 /* ── 磨く ── */
@@ -450,12 +439,8 @@ h1,h2,h3,p,figure,blockquote{margin:0}
   .voices{grid-template-columns:1fr;gap:28px}
   .voice:nth-child(n){transform:rotate(0)}
   .voice:nth-child(odd){transform:rotate(-1.2deg)}
-  .cert{padding:88px 0}
-  .cert .wrap{grid-template-columns:1fr;gap:40px}
-  .cert__giant{top:0;transform:none;font-size:220px}
-  .cert p{font-size:15px}
-  .cert__lead{font-size:16px !important}
-  .cert__img img{aspect-ratio:4/3;clip-path:none}
+  .cert{padding:56px 0}
+  .cert .wrap{grid-template-columns:1fr;gap:24px}
   .voice-sec__more{grid-column:auto;margin-top:40px}
   .voice-sec__score b{font-size:56px}
   .process{grid-template-columns:1fr 1fr;gap:8px}
